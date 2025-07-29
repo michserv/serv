@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iniciar sesión - WEYE SERVER</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('/static/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .login-container {
+      background-color: rgba(0, 0, 0, 0.7);
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 40px 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    }
+    h2 {
+      margin-bottom: 30px;
+      color: #00ffff;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px 15px;
+      margin: 10px 0 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .btn-login {
+      background-color: #00d37c;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1em;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .btn-login:hover {
+      background-color: #00b066;
+    }
+    .back-link,
+    .register-link {
+      display: block;
+      margin-top: 20px;
+      color: #ccc;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+    .back-link:hover,
+    .register-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Iniciar sesión</h2>
+    <form method="POST">
+      <input type="text" name="usuario" placeholder="Usuario o correo" required />
+      <input type="password" name="clave" placeholder="Contraseña" required />
+      <button type="submit" class="btn-login">Entrar</button>
+    </form>
+    <a href="/registro" class="register-link">¿No tienes cuenta? Regístrate</a>
+    <a href="/" class="back-link">← Volver al inicio</a>
+  </div>
+</body>
+</html>

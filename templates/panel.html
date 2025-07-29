@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel de Usuario</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('/static/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .panel {
+      background: rgba(0, 0, 0, 0.7);
+      display: inline-block;
+      padding: 40px;
+      border-radius: 10px;
+    }
+    h1 {
+      color: #00ffff;
+    }
+    a {
+      color: #00d37c;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <h1>Bienvenido, {{ usuario }}</h1>
+    <p>Este es tu panel personal.</p>
+    <a href="/logout">Cerrar sesión</a>
+  </div>
+</body>
+</html>

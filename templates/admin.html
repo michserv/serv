@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Administración</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #1a1a1a; color: white; padding: 30px; }
+        h2 { color: #00ffcc; }
+        table { width: 80%; border-collapse: collapse; margin-top: 20px; }
+        th, td { padding: 10px; border: 1px solid #444; text-align: center; }
+        th { background-color: #222; }
+    </style>
+</head>
+<body>
+    <h2>👑 Panel de Administración - Usuarios Registrados</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for u in usuarios %}
+            <tr>
+                <td>{{ u[0] }}</td>
+                <td>{{ u[1] }}</td>
+                <td>{{ u[2] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

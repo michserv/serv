@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WEYE SERVER</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('/static/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      min-height: 100vh;
+    }
+    .logo {
+      font-size: 2em;
+      font-weight: bold;
+      margin: 20px 0;
+      color: #00ffff;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .card {
+      background: white;
+      color: black;
+      border-radius: 20px;
+      width: 280px;
+      margin: 20px auto;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      margin: 5px 0;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+    }
+    .btn {
+      background-color: #00d37c;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 30px;
+      margin-top: 30px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .description {
+      margin: 40px 0 20px;
+      font-size: 0.95em;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+    }
+    footer {
+      font-size: 0.8em;
+      color: #ccc;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 2px #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">WEYE SERVER</div>
+    <div class="card">
+      <img src="https://i.imgur.com/Z6X3xrS.png" alt="Foto de Abby" />
+      <h3>@Abby</h3>
+      <div class="stats">
+        <div><strong>16.9k</strong><br />followers</div>
+        <div><strong>64k</strong><br />likes</div>
+      </div>
+    </div>
+    <button class="btn" onclick="location.href='login'">Registrarse / Iniciar sesión</button>
+    <div class="description">
+      <p>🏆 TRONOS Server es la comunidad más grande de BombSquad.</p>
+      <p>🏆 Aumenta tu nivel jugando en nuestros servidores.</p>
+      <p>🏆 Gana más Billetes aquí.</p>
+      <p>🏆 Unete a Discord para recibir noticias</p>
+    </div>
+    <footer>© 2024 WEYE SERVER, Todos los derechos reservados.</footer>
+  </div>
+</body>
+</html>
